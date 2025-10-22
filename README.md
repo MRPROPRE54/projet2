@@ -1,70 +1,175 @@
-# Getting Started with Create React App
+# React + Vite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Available Scripts
+Currently, two official plugins are available:
 
-In the project directory, you can run:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### `npm start`
+## React Compiler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Expanding the ESLint configuration
 
-### `npm test`
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Mon Miam Miam 
+Application web de commande de restaurant pour ZeDuc@Space - UCAC-ICAM 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Cahier des charges
+Projet développé selon le cahier des charges  pour le restaurant "Mon Miam Miam" situé à la Résidence La Terrasse, Yansoki.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Démarrage rapide
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prérequis
+- Node.js (version 16 ou supérieure)
+- npm ou yarn
 
-### `npm run eject`
+### Installation
+1. **Cloner le projet** (si depuis Git) ou naviguer dans le dossier du projet
+2. **Installer les dépendances**
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Lancer le serveur de développement**
+```bash
+npm run dev
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Ouvrir dans le navigateur**
+   - L'application s'ouvrira automatiquement à `http://localhost:3000`
+   - Si non, ouvrez manuellement cette URL dans votre navigateur
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Comptes de démonstration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Étudiant
+- Email: `jean.dupont@ucac-icam.com`
+- Mot de passe: `Pass123`
 
-## Learn More
+### Employé
+- Email: `paul.nkosi@zeduc.com`
+- Mot de passe: `Admin123`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Gérant
+- Email: `sophie.mbida@zeduc.com`
+- Mot de passe: `Manager123`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Administrateur
+- Email: `admin@zeduc.com`
+- Mot de passe: `Admin123`
 
-### Code Splitting
+## Charte graphique
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Couleur primaire**: #cfbd97 (Doré)
+- **Couleur secondaire**: #000000 (Noir)
 
-### Analyzing the Bundle Size
+## Technologies utilisées
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Frontend**: React 19.1.1 + JSX
+- **Styles**: Bootstrap 5 + CSS personnalisé
+- **Icons**: Lucide React
+- **Build tool**: Vite
+- **Language**: JavaScript (ES6+)
 
-### Making a Progressive Web App
+## 📱 Fonctionnalités principales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Espace Étudiant
+- Commande en ligne avec panier
+- Programme de fidélité (1000F = 1 point, 15 points = 1000F)
+- Système de parrainage avec codes uniques
+- Historique des commandes
+- Dépôt de réclamations
+- Accès au Top 10 clients
+- Mini-jeux
 
-### Advanced Configuration
+### Espace Employé
+- Validation des commandes
+- Mise à jour du menu (disponibilité)
+- Gestion des réclamations
+- Statistiques hebdomadaires
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Espace Gérant
+- Supervision des commandes en temps réel
+- Création de comptes employés
+- Statistiques globales
+- Gestion des réclamations
 
-### Deployment
+### Espace Administrateur
+- Gestion complète des utilisateurs
+- CRUD du menu
+- Création de promotions et événements
+- Paramètres de l'application
+- Statistiques détaillées
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Système de tarification
+- **Gamelle**: 200F par plat
+- **Livraison**: 100F 
+- **Points de fidélité**: Calculés automatiquement
 
-### `npm run build` fails to minify
+## Modes de paiement (simulés)
+- Espèces à la livraison
+- Mobile Money
+- CinePay (Carte bancaire)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Structure du projet
+```
+mon-miam-miam/
+├── components/         # Composants réutilisables
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   └── CookieConsent.jsx
+├── pages/             # Pages de l'application
+│   ├── HomePage.jsx
+│   ├── LoginPage.jsx
+│   ├── RegisterPage.jsx
+│   ├── MenuPage.jsx
+│   ├── CartPage.jsx
+│   ├── StudentDashboard.jsx
+│   ├── EmployeeDashboard.jsx
+│   ├── ManagerDashboard.jsx
+│   └── AdminDashboard.jsx
+├── data/              # Données simulées
+│   └── mockData.js
+├── utils/             # Utilitaires
+│   └── auth.js
+├── styles/            # Styles CSS
+│   └── globals.css
+└── App.jsx            # Composant principal
+
+```
+
+## Scripts disponibles
+- `npm run dev` - Lance le serveur de développement
+- `npm run build` - Compile pour la production
+- `npm run preview` - Prévisualise la version de production
+
+## Notes importantes
+- Les données sont **simulées localement** (pas de vraie base de données)
+- Les paiements sont **simulés** (pas de vraie intégration CinetPay)
+- L'authentification utilise **localStorage** (pas de vraie sécurité backend)
+- Cette application est un **prototype fonctionnel** pour démonstration
+
+## Développement
+Projet développé pour les étudiants de 2ème année del'institut UCAC-ICAM de Yansoki, Cameroun.
+
+### Équipe
+- 6 personnes par groupe
+- Durée: 3 semaines 
+- Méthodologie: Agile (Scrum)
+
+## Licence
+Projet académique - UCAC-ICAM © 2024
+
+## Support
+Pour toute question ou problème:
+1. Vérifier que Node.js est installé: `node --version`
+2. Vérifier que les dépendances sont installées: `npm install`
+3. Consulter la console du navigateur (F12) pour les erreurs
+4. Vider le cache du navigateur si nécessaire
+
+---
+
