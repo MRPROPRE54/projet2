@@ -122,7 +122,7 @@ mon-miam-miam/
 │   ├── Navbar.jsx
 │   ├── Footer.jsx
 │   └── CookieConsent.jsx
-├── pages/             # Pages de l'application
+├── pages/              # Pages de l'application
 │   ├── HomePage.jsx
 │   ├── LoginPage.jsx
 │   ├── RegisterPage.jsx
@@ -131,6 +131,8 @@ mon-miam-miam/
 │   ├── StudentDashboard.jsx
 │   ├── EmployeeDashboard.jsx
 │   ├── ManagerDashboard.jsx
+|   ├──CookiePolicy.jsx
+|   ├──PrivacyPolicy.jsx
 │   └── AdminDashboard.jsx
 ├── data/              # Données simulées
 │   └── mockData.js
