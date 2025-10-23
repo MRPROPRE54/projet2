@@ -72,6 +72,46 @@ const CartPage = ({ cart, onUpdateCart, onRemoveFromCart, currentUser, onNavigat
     onCheckout(orderData);
   };
 
+  const handleCinetPayPayment = () => {
+  // Validation de la commande avant de procéder au paiement
+  if (cart.length === 0) {
+    alert('Votre panier est vide !');
+    return;
+  }
+
+  if (deliveryType === 'delivery' && !deliveryAddress) {
+    alert('Veuillez entrer une adresse de livraison');
+    return;
+  }
+
+  if (!deliveryTime) {
+    alert('Veuillez choisir une heure de retrait/livraison');
+    return;
+  }
+
+  // Préparer les données de la commande
+  const orderData = {
+    items: cart,
+    deliveryType,
+    deliveryAddress,
+    deliveryTime,
+    orderNote,
+    subtotal,
+    gamelleCost,
+    deliveryCost,
+    pointsDiscount,
+    total,
+    pointsToEarn,
+    paymentMethod: 'cinetpay',
+    usePoints
+  };
+
+  console.log('Initialisation du paiement CinetPay avec:', orderData);
+
+  // Pour le moment, afficher un message
+  alert('Redirection vers CinetPay... (À implémenter avec votre backend Laravel)');
+};
+
   if (cart.length === 0) {
     return (
       <div className="container my-5 fade-in">
@@ -320,20 +360,13 @@ const CartPage = ({ cart, onUpdateCart, onRemoveFromCart, currentUser, onNavigat
                   📱 Mobile Money
                 </label>
               </div>
-              <div className="form-check">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="paymentMethod"
-                  id="cinetpay"
-                  value="cinetpay"
-                  checked={paymentMethod === 'cinetpay'}
-                  onChange={(e) => setPaymentMethod(e.target.value)}
-                />
-                <label className="form-check-label" htmlFor="cinetpay">
-                  💳 CinetPay (Carte bancaire)
-                </label>
-              </div>
+              <button
+                type="button"
+                className="cinetpay-button"
+                onClick={handleCinetPayPayment}
+                >
+                  💳 CinetPay
+                </button>
             </div>
           </div>
 
