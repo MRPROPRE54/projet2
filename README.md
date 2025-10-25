@@ -131,9 +131,12 @@ mon-miam-miam/
 │   ├── StudentDashboard.jsx
 │   ├── EmployeeDashboard.jsx
 │   ├── ManagerDashboard.jsx
-|   ├──CookiePolicy.jsx
-|   ├──PrivacyPolicy.jsx
+|   ├── CookiePolicy.jsx
+|   ├── PrivacyPolicy.jsx
+|   ├── SpinWheelGame.jsx
+|   ├── ChefQuizGame.jsx
 │   └── AdminDashboard.jsx
+├──stories/            # Pour la documentation
 ├── data/              # Données simulées
 │   └── mockData.js
 ├── utils/             # Utilitaires
