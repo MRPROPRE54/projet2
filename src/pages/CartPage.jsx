@@ -108,6 +108,7 @@ const CartPage = ({ cart, onUpdateCart, onRemoveFromCart, currentUser, onNavigat
 
   console.log('Initialisation du paiement CinetPay avec:', orderData);
 
+
   // Pour le moment, afficher un message
   alert('Redirection vers CinetPay... (À implémenter avec votre backend Laravel)');
 };

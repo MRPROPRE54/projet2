@@ -4,6 +4,8 @@ import {
   Copy, Check, TrendingUp, Clock, DollarSign, Star,
   Package, Truck, CheckCircle, XCircle
 } from 'lucide-react';
+import SpinWheelGame from './SpinWheelGame';
+import ChefQuizGame from './ChefQuizGame';
 
 const StudentDashboard = ({ 
   currentUser, 
@@ -11,12 +13,15 @@ const StudentDashboard = ({
   menuItems, 
   topClients,
   onNavigate,
-  onAddToCart 
+  onAddToCart,
+  onUpdateUserPoints
 }) => {
   const [activeTab, setActiveTab] = useState('overview');
   const [copiedCode, setCopiedCode] = useState(false);
   const [newComplaint, setNewComplaint] = useState({ subject: '', description: '' });
   const [topClientsFilter, setTopClientsFilter] = useState('month');
+  const [showSpinWheel, setShowSpinWheel] = useState(false);
+  const [showQuiz, setShowQuiz] = useState(false);
 
   // Statistiques utilisateur
   const userOrders = orders.filter(o => o.userId === currentUser.id);
@@ -42,6 +47,17 @@ const StudentDashboard = ({
     alert('Réclamation envoyée avec succès ! Nous vous répondrons dans les plus brefs délais.');
     setNewComplaint({ subject: '', description: '' });
     setActiveTab('overview');
+  };
+
+  const handleWinPoints = (points) => {
+    // Mettre à jour les points de l'utilisateur
+    onUpdateUserPoints(currentUser.id, points);
+    
+    if (points > 0) {
+      alert(`Félicitations ! Vous avez gagné ${points} points !`);
+    } else if (points < 0) {
+      alert(`Vous avez perdu ${Math.abs(points)} points. Bonne chance la prochaine fois !`);
+    }
   };
 
   // Statut de commande
@@ -617,14 +633,23 @@ const StudentDashboard = ({
                   </div>
                   <h5>Roue de la Chance</h5>
                   <p className="text-muted">
-                    Tournez la roue et gagnez jusqu'à 50 points de fidélité !
+                    Tournez la roue et gagnez jusqu'à 15 points de fidélité !
                   </p>
                   <p className="mb-3">
-                    <small className="text-muted">Coût: 10 points</small>
+                    <small className="text-muted">Coût: 5 points</small>
                   </p>
-                  <button className="btn btn-primary" disabled={currentUser.loyaltyPoints < 10}>
+                  <button 
+                  className="btn btn-primary" 
+                  disabled={currentUser.loyaltyPoints < 5}
+                  onClick={() => setShowSpinWheel(true)}
+                  >
                     Jouer maintenant
                   </button>
+                  {currentUser.loyaltyPoints < 5 && (
+                    <small className="d-block text-danger mt-2">
+                      Points insuffisants
+                    </small>
+                  )}
                 </div>
               </div>
             </div>
@@ -647,16 +672,42 @@ const StudentDashboard = ({
                     Testez vos connaissances culinaires et gagnez 20 points !
                   </p>
                   <p className="mb-3">
-                    <small className="text-muted">Coût: 5 points</small>
+                    <small className="text-muted">Coût: 10 points</small>
                   </p>
-                  <button className="btn btn-primary" disabled={currentUser.loyaltyPoints < 5}>
+                  <button 
+                  className="btn btn-primary" 
+                  disabled={currentUser.loyaltyPoints < 10}
+                  onClick={() => setShowQuiz(true)}
+                  >
                     Jouer maintenant
                   </button>
+                  {currentUser.loyaltyPoints < 10 && (
+                    <small className="d-block text-danger mt-2">
+                      Points insuffisants
+                    </small>
+                  )}
                 </div>
               </div>
             </div>
           </div>
         )}
+
+        {/* Modals des jeux */}
+        {showSpinWheel && (
+        <SpinWheelGame
+          currentUser={currentUser}
+          onClose={() => setShowSpinWheel(false)}
+          onWinPoints={handleWinPoints}
+        />
+      )}
+
+      {showQuiz && (
+        <ChefQuizGame
+          currentUser={currentUser}
+          onClose={() => setShowQuiz(false)}
+          onWinPoints={handleWinPoints}
+        />
+      )}
       </div>
     </div>
   );

@@ -11,6 +11,8 @@ import ManagerDashboard from './pages/ManagerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import MenuPage from './pages/MenuPage';
 import CartPage from './pages/CartPage';
+import SpinWheelGame from './pages/SpinWheelGame';
+import ChefQuizGame from './pages/ChefQuizGame';
 import CookiePolicy from './pages/CookiePolicy';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import { authService } from './utils/auth';
@@ -115,6 +117,17 @@ export default function App() {
 
   const handleRemoveFromCart = (itemId) => {
     setCart(cart.filter(item => item.id !== itemId));
+  };
+
+  const handleUpdateUserPoints = (userId, pointsChange) => {
+    setUsers(users.map(user => {
+      if (user.id === userId) {
+        return {
+          ...user,
+          loy
+        }
+      }
+    }))
   };
 
   const handleCheckout = (orderData) => {
@@ -319,7 +332,7 @@ export default function App() {
         </main>
         
         <Footer onNavigate={handleNavigate}/>
-        <CookieConsent />
+        <CookieConsent onNavigate={handleNavigate}/>
       </div>
 
       {/* Bootstrap JS */}

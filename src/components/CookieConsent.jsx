@@ -48,11 +48,13 @@ const CookieConsent = () => {
                 </p>
                 <a 
                   href="#" 
+                  onClick={handleLearnMore}
                   className="mt-2 d-inline-block" 
                   style={{ 
                     color: 'var(--primary)', 
                     textDecoration: 'underline',
-                    fontSize: '0.85rem'
+                    fontSize: '0.85rem',
+                    cursor: 'pointer'
                   }}
                 >
                   En savoir plus sur notre politique de cookies
