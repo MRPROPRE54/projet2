@@ -3,7 +3,7 @@ import PouletDGImage from '../assets/image/Poulet_DG.png';
 import PoissonBraiseImage from '../assets/image/Poisson_braisé.png';
 import KokiImage from '../assets/image/Koki.png';
 import NdoleImage from '../assets/image/Ndole.png';
-import RizSauteImage from '../assets/image/Riz_Sauté.png';
+import RizSauteImage from '../assets/image/Riz_sauté.png';
 import PlantainFritImage from '../assets/image/Plantain_frit.png';
 
 // Utilisateurs simulés
