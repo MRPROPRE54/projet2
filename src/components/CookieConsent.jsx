@@ -48,7 +48,10 @@ const CookieConsent = () => {
                 </p>
                 <a 
                   href="#" 
-                  onClick={handleLearnMore}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (onNavigate) onNavigate('cookie-policy');
+                  }}
                   className="mt-2 d-inline-block" 
                   style={{ 
                     color: 'var(--primary)', 
