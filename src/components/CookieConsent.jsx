@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Cookie, X } from 'lucide-react';
 
-const CookieConsent = () => {
+const CookieConsent = ({ onNavigate }) => {
   const [showConsent, setShowConsent] = useState(false);
 
   useEffect(() => {
