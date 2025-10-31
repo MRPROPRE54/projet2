@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="MIAM MIAM WEB APP" company="" webLink="http://" view-date="2025-10-01" view-index="0" gantt-divider-location="631" resource-divider-location="300" version="3.3.3300" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="349" order="0"/>
+        <field id="tpd4" name="Date de début" width="132" order="1"/>
+        <field id="tpd5" name="Date de fin" width="134" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="taskLabelUp" value=""/>
+        <option id="taskLabelDown" value="length"/>
+        <option id="taskLabelLeft" value="name"/>
+        <option id="taskLabelRight" value="resources"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#990000 #ff0033]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="0df01dacebc74c87847754158b90951c" name="Phase 1 – Planification et Analyse" meeting="false" start="2025-10-03" duration="3" complete="0" expand="true">
+            <task id="1" uid="bfc9ba7df868414580681f21ae729ccd" name="Lecture et compréhension du cahier de charge" meeting="false" start="2025-10-03" duration="1" complete="0" thirdDate="2025-10-08" thirdDate-constraint="0" expand="true"/>
+            <task id="2" uid="333bc6727d0e40da8056a75102b47922" name="Identification des objectifs et contraintes" meeting="false" start="2025-10-03" duration="1" complete="0" thirdDate="2025-10-08" thirdDate-constraint="0" expand="true"/>
+            <task id="3" uid="b95ba3caa0c9408183da7acc72855017" name="Définition des rôles de l’équipe projet" meeting="false" start="2025-10-04" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="45" uid="6c5d332e4b4b401385f294fbf31d432f" name="Création du planning prévisionnelle" meeting="false" start="2025-10-04" duration="1" complete="0" thirdDate="2025-10-02" thirdDate-constraint="0" expand="true"/>
+            <task id="4" uid="f7a3d044f8c349298d89f3b86a1a166d" name="Création du projet sur Jira" meeting="false" start="2025-10-04" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="5" uid="53a67ad3c02b405cb7134b393198c293" name="Rédaction du backlog et des user stories" meeting="false" start="2025-10-04" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="6" uid="b8bca9f08e9c44a8a35fc08a25124867" name="Phase 2 – Conception (UI/UX et Architecture)" meeting="false" start="2025-10-06" duration="6" complete="0" expand="true">
+            <task id="7" uid="d3cd168a7f0b40bead28991766482ce7" name="Conception de la base de données (tables, relations, diagrammes)" meeting="false" start="2025-10-06" duration="3" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="8" uid="3fb7f6245d7141a9b0dbf5cdefbeb361" name="Définition de l’architecture MVC et choix des technos" meeting="false" start="2025-10-07" duration="3" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="9" uid="6ad6737faa6047a4b231b1a5d039613e" name="Création des wireframes (zoning)" meeting="false" start="2025-10-08" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="10" uid="d0f49a7540754cb0b3965dd6c70d62b0" name="Création des maquettes Figma (interfaces principales)" meeting="false" start="2025-10-09" duration="3" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="11" uid="3167494b4a654bb0b0a259093bd4d1f6" name="Validation des maquettes et ajustements graphiques" meeting="false" start="2025-10-11" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="12" uid="42e3fd37dc8b41c3b8daa1e458bd4391" name="Phase 3 – Développement Frontend" meeting="false" start="2025-10-11" duration="5" complete="0" expand="true">
+            <task id="13" uid="2463fdbc751a4bd6bae24bc15b8a4011" name="Initialisation du projet frontend" meeting="false" start="2025-10-11" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="14" uid="6e979fbb0bec4df5bd9b6245c5492629" name="Création de la page d’accueil" meeting="false" start="2025-10-12" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="15" uid="4dd87674e4ae471a8b9dbd884fb1f71d" name="Développement de la page d’authentification" meeting="false" start="2025-10-13" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="16" uid="93ddd18e3aad457abfaca0a97d57b905" name="Développement de l’espace étudiant" meeting="false" start="2025-10-13" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="17" uid="e434b556e2c14f92a30ca25112fd534b" name="Développement de l’espace employé" meeting="false" start="2025-10-13" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="18" uid="38aaaba6a6d34571a56898b5e846947d" name="Développement de l’espace admin/gérant" meeting="false" start="2025-10-13" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="19" uid="112fe121cf6240f4a521e9695e650a96" name="Vérification de la cohérence graphique et responsive" meeting="false" start="2025-10-15" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[1]]></notes>
+            </task>
+        </task>
+        <task id="20" uid="9e621ef108cc43e494e0286ec0469bfe" name="Phase 4 – Développement Backend (API et logique métier)" meeting="false" start="2025-10-15" duration="8" complete="0" expand="true">
+            <task id="21" uid="fe0e258c004e48bfb6f0194227cacd40" name="Création du dépôt GitHub et initialisation du backend" meeting="false" start="2025-10-15" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="22" uid="36985a5a80f742cfa59bf9e765574fe9" name="Mise en place du serveur et des routes API" meeting="false" start="2025-10-15" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="23" uid="6d38510d026342a6ad5953573a7d10b1" name="Création des modèles" meeting="false" start="2025-10-16" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="24" uid="b83bd4aa8dc0413fb5adee85f673d95e" name="Implémentation de l’authentification et sécurité JWT" meeting="false" start="2025-10-18" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="25" uid="a689855ce95440488bfccc607e9eaa27" name="Intégration base de données et relations" meeting="false" start="2025-10-19" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="26" uid="43325164ef8e42c6842d7a754d66f9fd" name="Développement du module fidélité et parrainage" meeting="false" start="2025-10-20" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="27" uid="d8905f229d7b43ccbe3aaf66c94350b1" name="Tests de communication API-frontend" meeting="false" start="2025-10-21" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="28" uid="c6faa5ad7d914fa3b05214d0824eb232" name="Phase 5 – Tests et Intégration" meeting="false" start="2025-10-22" duration="2" complete="0" expand="true">
+            <task id="29" uid="776bda4453bd43eabc065cbe0d81c283" name="Rédaction des tests unitaires" meeting="false" start="2025-10-22" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="30" uid="bec0138cfbf94daba95bac483bad113b" name="Réalisation des tests fonctionnels" meeting="false" start="2025-10-22" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="31" uid="cae98056494b459890ff1b8b1aea41b6" name="Réalisation des tests end-to-end" meeting="false" start="2025-10-22" duration="2" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="32" uid="0fbc85032d3b4f939f4ca183fa82b3e4" name="Correction des bugs et optimisation performance" meeting="false" start="2025-10-23" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="33" uid="7844324a8c6048e0b99490090488bc3e" name="Phase 6 – Déploiement et Livraison" meeting="false" start="2025-10-23" duration="1" complete="0" expand="true">
+            <task id="34" uid="e569449ace4d420d9e8853f59ac19bf6" name="Déploiement du frontend sur Vercel" meeting="false" start="2025-10-23" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="35" uid="a06761803c7a4d71ba90fb7f6db97bfa" name="Hébergement backend (API + base de données)" meeting="false" start="2025-10-23" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="36" uid="22cfeb6e2a284ef89e5de10069302ac4" name="Vérification du bon fonctionnement en production" meeting="false" start="2025-10-23" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="37" uid="dd6f362044f2424285c9e87c01ded6c7" name="Phase 7 – Documentation et Présentation finale" meeting="false" start="2025-10-24" duration="1" complete="0" thirdDate="2025-10-20" thirdDate-constraint="0" expand="true">
+            <task id="38" uid="5635e5d51e5943b28242120eea395301" name="Rédaction de la documentation technique et utilisateur" meeting="false" start="2025-10-24" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="39" uid="9be96efa01d74d279a52ebc314b0202a" name="Création du manuel utilisateur et charte graphique" meeting="false" start="2025-10-24" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+            <task id="40" uid="a66f13cab0434ab3872f1ca1cd3fced3" name="Préparation de la présentation et dépôt final" meeting="false" start="2025-10-24" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="44" uid="2786576c50104f7b81e23a105cc10199" name="Soutenance finale" meeting="false" start="2025-10-27" duration="1" complete="0" thirdDate="2025-10-03" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="JIPNANG" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="DJANDA" function="1" contacts="" phone=""/>
+        <resource id="2" name="KAMDOM" function="1" contacts="" phone=""/>
+        <resource id="3" name="SOH" function="1" contacts="" phone=""/>
+        <resource id="4" name="POUMO" function="1" contacts="" phone=""/>
+        <resource id="5" name="NGOUNOU" function="1" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="38" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="2" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="2" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="2" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="3" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="4" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="4" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="4" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="4" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="4" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="4" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="5" function="1" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Dévéloppeur"/>
+    </roles>
+</project>
